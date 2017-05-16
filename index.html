@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Mi primer CV</title>
-    <link rel="stylesheet" type="text/css" href="./css/estilos.css" />
-    <link rel="stylesheet" type="text/css" href="./css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="./css/icons.css" />
+    <meta charset="UTF-8">
+    <title>CV Online</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/extra.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/animate.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/icons.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/unslider.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Droid+Serif" rel="stylesheet" />
+    <script src="./js/jquery.min.js" charset="utf-8"></script>
+    <script src="./js/unslider.js" charset="utf-8"></script>
   </head>
   <body>
   <main id="contenedor">
     <nav id="perfil" class="animated fadeInUp">
-      <img src="https://avatars2.githubusercontent.com/u/7019532?v=3&s=400" alt="Edgar Iván Avila Garrido">
+      <img src="https://avatars2.githubusercontent.com/u/7019532?v=3&s=400" alt="Edgar Iván Avila Garrido" title="Edgar Iván Avila Garrido" />
       <ul id="navegacion">
         <li><i class = "icon-pacman"></i><a href="#presentacion">Presentación</a></li>
         <li><i class = "icon-profile"></i><a href="#formacion">Formación</a></li>
@@ -20,11 +24,11 @@
       </ul>
     </nav>
     <section id="contenido">
-        <div id="presentacion" class="bloque">
-          <h2>Quién soy</h1>
+        <div id="presentacion" class="bloque-info">
+          <h2>¿Quién soy?</h1>
           <h1>Ivan Avila</h2>
           <h3>Front-End Jr.</h3>
-          <ul id="info">
+          <ul id="datos-personales">
             <li><strong>Nombre:</strong> Edgar Ivan Avila Garrido</li>
             <li><strong>Edad:</strong> 29</li>
             <li><strong>Dirección:</strong> Real de Calacoaya 7810-3B Real San Francisco </li>
@@ -33,36 +37,66 @@
             <li><strong>Github:</strong> https://github.com/wolfogan</li>
           </ul>
           <p>
-            Soy una persona que gusta de la tecnología.
-            Actualmente trabajo para una empresa automótriz en
-            el área de desarrollo.
+            Soy una persona que gusta de la tecnología. Actualmente trabajo para una empresa automótriz en el área de desarrollo.
           </p>
           <p>
-            Trabajo bajo un entorno totalmente Windows aunque me
-            entusiasma conocer otros SO y más lo relacionado a
-            desarrollo web. Me encanta conocer gente que les apasiona
-            lo que a mi me gusta y desearía compartir mis conocimientos
-            y crecer con ustedes en esta maravillosa profesión.
+            Trabajo bajo un entorno totalmente Windows aunque me entusiasma conocer otros SO y más lo relacionado a desarrollo web.
+            Me encanta conocer gente que les apasiona lo que a mi me gusta y desearía compartir mis conocimientos y crecer con
+            ustedes en esta maravillosa profesión.
           </p>
         </div>
-        <div id="formacion" class="bloque">
+        <div id="formacion" class="bloque-info">
           <h2>Formación</h2>
           <h3>Maestría en Tecnologias de la Información - UABC</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, tempore unde error. Nihil harum nisi, quas consectetur perferendis voluptatem possimus, eum neque temporibus ipsam animi ut saepe mollitia fuga fugiat sit quia illo reprehenderit. Iure adipisci quisquam beatae earum nulla reiciendis. Aut magnam officiis, quas, sint quibusdam dignissimos quod blanditiis.</p>
+          <p>
+            Obtención del grado de Maestro en Tecnologías de la Información con la tésis
+            <span>"Programación BACKEND del sistema SIGAF (Sistema de Gestion Académica de la Facultad de Administración UABC)"</span>
+            el cual cubría el desarrollo de un aplicativo web realizado de los procesos de administración general
+            (horarios, administración de aulas, etc.) con el framework Laravel versión 4 <em>(lenguaje PHP
+            y MySQL como motor de base de datos)</em>.
+          </p>
           <h3>Ing. Sistemas Computacionales - Tecnólogico Tijuana</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis illo quo voluptatum error reprehenderit dolore, alias mollitia ullam nulla tempora nam necessitatibus placeat aliquam, ipsum ipsam voluptatibus sunt molestiae tenetur aspernatur animi et incidunt totam. Exercitationem dolore, repudiandae officiis sequi ipsa ducimus suscipit libero quam blanditiis odit, quod, consequuntur!</p>
+          <p>
+            Obtención del grado de Ingeniería mediante el desarrollo e implementación de un sistema de gestión de partidas para una
+            constructora de Tijuana, desarrollado con .NET específicamente C# como lenguaje de programación.
+          </p>
           <h3>Carrera Desarrollador Web - Acámica</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eius fugit asperiores beatae praesentium, quasi incidunt cumque explicabo esse provident labore facere, non odio corporis assumenda, alias sint dolorem. Vitae sint minus obcaecati autem. Consequuntur sed quibusdam voluptate obcaecati commodi doloremque, beatae? Eos, atque nam a sunt ullam, quo dicta.</p>
+          <p>Estudiante <em>NOOB</em> que pretende ser un profesional como los maestros de <span>ACAMICA</span>.</p>
         </div>
-        <div id="experiencia" class="bloque">
+        <div id="experiencia" class="bloque-info">
           <h2>Experiencia</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, eaque, natus? Asperiores repellendus a quos nemo sed magnam quasi, tempora ratione placeat. Explicabo maxime aspernatur adipisci nemo neque. Repellat eligendi nisi hic excepturi explicabo, deleniti non molestias id consequuntur totam temporibus fugit necessitatibus quo doloribus at consectetur animi sed deserunt!</p>
+          <h3>BOURNS Tijuana</h3>
+          <p>
+            Desarrollador/Programador de aplicaciones auxiliares (sistemas de métricos, pokayokee, rastreabilidad de materiales, etc.)
+            para la producción de sensores para la industria Automotriz en Tijuana. (3 años)
+          </p>
+          <h3>UABC</h3>
+          <p>
+            Desarrollador BACKEND del sistema SIGAF para la gestión administrativa de la Facultad de Contaduría y Administración. (2 años)
+          </p>
+          <h3>Aduana Tijuana-USA Chaparral</h3>
+          <p>
+            Soporte Mantenimiento y Desarrollo parcial del sistema SIAVE (Control y flujo vehicular en la frontera Tijuana-Chaparral). (5 años)
+          </p>
         </div>
-        <div id="portafolio" class="bloque">
+        <div id="portafolio" class="bloque-info">
           <h2>Portafolio</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloribus rerum beatae cumque voluptates expedita aliquam nesciunt quaerat suscipit! Inventore tempora ipsa porro officiis quia ab tenetur doloribus, id enim!</p>
+          <p>Proyectos desarrollados para ser un crack con <span>ACAMICA</span> :D.</p>
+          <div class="slider">
+            <ul>
+              <li>Portafolio</li>
+              <li>Sitio Noticias</li>
+              <li>Rompecabezas</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
+    <script type="text/javascript">
+      $('.slider').unslider({
+        arrows: false,
+        autoplay: true
+      });
+    </script>
   </body>
 </html>
